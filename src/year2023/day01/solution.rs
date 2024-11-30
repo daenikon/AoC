@@ -1,7 +1,7 @@
-use std::fs;
+//use std::fs;
 
-pub fn run() {
-    let contents = fs::read_to_string("./inputs/year2023/day01/input.txt").expect("Failed to load file's content");
+pub fn run(contents: &str) -> u64 {
+    //let contents = fs::read_to_string("./inputs/year2023/day01/input.txt").expect("Failed to load file's content");
 
     let char_nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
@@ -25,5 +25,5 @@ pub fn run() {
         sum += (first_num as u64 - 48) * 10;
         sum += last_num as u64 - 48;
     }
-    println!("{sum}");
+    sum
 }

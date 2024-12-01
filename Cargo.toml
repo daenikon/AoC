@@ -13,6 +13,6 @@ path = "src/lib.rs"
 criterion = { version = "0.5", features = ["html_reports"] }
 
 [[bench]]
-name = "day01"
+name = "year2023_day01"
 harness = false
 

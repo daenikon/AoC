@@ -30,7 +30,7 @@ fn is_report_safe(report: &str) -> bool {
     }
 
     // set level order - ascending or descending
-    let mut is_order_ascending: bool = levels[0] < levels[1];
+    let is_order_ascending: bool = levels[0] < levels[1];
 
     // start with the second level, since first diff was validated
     for i in 1..levels.len()-1 {

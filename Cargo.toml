@@ -8,6 +8,7 @@ name = "aoc"
 path = "src/lib.rs"
 
 [dependencies]
+regex = "1.9"
 
 [dev-dependencies]
 criterion = { version = "0.5", features = ["html_reports"] }

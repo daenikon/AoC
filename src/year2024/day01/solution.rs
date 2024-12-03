@@ -50,7 +50,7 @@ fn calculate_similarity_score(vec1: &Vec<u32>, vec2: &Vec<u32>) -> u32 {
 
     let mut similarity_score: u32 = 0;
     for i in 0..vec1.len() {
-        if (i < vec1.len() - 2 && vec1[i] == vec1[i+1]) {
+        if i < vec1.len() - 2 && vec1[i] == vec1[i+1] {
             continue;
         }
         let temp = occurences.get(&vec1[i]).copied().unwrap_or(0);
